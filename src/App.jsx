@@ -3,11 +3,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./index.css";
-import Header from "./components/header";
+import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/pages/home";
 import About from "./components/pages/about";
-import Footer from "./components/footer";
+import Project from "./components/pages/projects";
+import Contact from "./components/pages/contact";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -24,8 +26,10 @@ const App = () => {
           {/* Dynamic Content Area */}
           <div className="flex-grow overflow-y-auto">
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/project" element={<Project />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
 
