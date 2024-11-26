@@ -6,7 +6,7 @@ import splashBg from "../../assets/splash.png";
 
 const About = () => {
   return (
-    <div className="text-gray-800 p-11">
+    <div className="text-gray-800 p-16">
       <div className="max-w-5xl mx-auto space-y-12">
         {/* About Me Section */}
         <section
@@ -27,7 +27,7 @@ const About = () => {
               About Me
             </h2>
             <p className="text-lg leading-relaxed text-center sm:text-left">
-              Hi! I am <span className="font-bold italic">Sothyra</span>, a
+              Hi! I am Sothyra, a
               Software Engineering Technician recent graduate from Centennial
               College with a strong foundation and interest in web development
               and software testing. I am eager to apply my technical skills and

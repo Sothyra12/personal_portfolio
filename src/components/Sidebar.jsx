@@ -7,12 +7,12 @@ const Sidebar = () => {
   const menuItems = [
     { id: "home", icon: <HomeIcon className="h-6 w-6" />, label: "Home", path: "/" },
     { id: "about", icon: <UserIcon className="h-6 w-6" />, label: "About", path: "/about" },
-    { id: "projects", icon: <CodeIcon className="h-6 w-6" />, label: "Projects", path: "/projects" },
+    { id: "projects", icon: <CodeIcon className="h-6 w-6" />, label: "Projects", path: "/project" },
     { id: "contact", icon: <BookOpenIcon className="h-6 w-6" />, label: "Contact", path: "/contact" },
   ];
 
   return (
-    <div className="fixed top-20 left-5 w-20 bg-gray-900 text-gray-400 shadow-lg rounded-lg flex flex-col items-center py-4">
+    <div className="fixed bottom-20 left-10 w-20 bg-gray-900 text-gray-400 shadow-lg rounded-3xl flex flex-col items-center py-9">
       {menuItems.map((item) => (
         <NavLink
           key={item.id}
