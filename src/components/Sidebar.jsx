@@ -5,10 +5,10 @@ import { HomeIcon, UserIcon, CodeIcon, BookOpenIcon } from "@heroicons/react/sol
 
 const Sidebar = () => {
   const menuItems = [
-    { id: "home", icon: <HomeIcon className="h-6 w-6" />, label: "Home", path: "/" },
-    { id: "about", icon: <UserIcon className="h-6 w-6" />, label: "About", path: "/about" },
-    { id: "projects", icon: <CodeIcon className="h-6 w-6" />, label: "Projects", path: "/project" },
-    { id: "contact", icon: <BookOpenIcon className="h-6 w-6" />, label: "Contact", path: "/contact" },
+    { id: "home", icon: <HomeIcon className="h-5 w-5" />, label: "Home", path: "/" },
+    { id: "about", icon: <UserIcon className="h-5 w-5" />, label: "About", path: "/about" },
+    { id: "projects", icon: <CodeIcon className="h-5 w-5" />, label: "Projects", path: "/project" },
+    { id: "contact", icon: <BookOpenIcon className="h-5 w-5" />, label: "Contact", path: "/contact" },
   ];
 
   return (
