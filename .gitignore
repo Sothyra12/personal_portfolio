@@ -61,3 +61,4 @@ The `.gitignore` file you have is already quite comprehensive. However, dependin
 
 Add these entries to your `.gitignore` file as needed based on your project's requirements.
 node_modules
+.env
