@@ -135,11 +135,11 @@ const About = () => {
                   <span className="text-sm text-gray-600">Beginner</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">Node.js</span>
+                  <span className="text-lg font-normal mr-2">MySQL</span>
                   <span className="text-sm text-gray-600">Beginner</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">MySQL</span>
+                  <span className="text-lg font-normal mr-2">Node.js</span>
                   <span className="text-sm text-gray-600">Beginner</span>
                 </div>
                 <div className="flex items-center">

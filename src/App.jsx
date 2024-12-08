@@ -1,6 +1,7 @@
 // src/App.jsx
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import "./index.css";
 import Header from "./components/Header";

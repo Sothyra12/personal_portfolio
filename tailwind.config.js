@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         Knewave: ['Knewave', 'cursive'],
+        Euphoria: ['Euphoria Script', 'cursive'],
       },
       color: {
         'brownish': '#603F26',

@@ -1,19 +1,23 @@
 /* src/index.css */
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 #root {
-    padding-top: 60px;
-    background-color: #E1D7C6;
-    font-family: 'Raleway', sans-serif;
+  padding-top: 60px;
+  background-color: #e1d7c6;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
-  }
-  
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.footer h1 {
+  font-family: "Euphoria Script", cursive;
+  color: #e1d7c6;
+}

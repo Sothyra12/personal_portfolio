@@ -1,33 +1,94 @@
-// components/Sidebar.jsx
+// src/components/Sidebar.jsx
 
 import { NavLink } from "react-router-dom";
-import { HomeIcon, UserIcon, CodeIcon, BookOpenIcon } from "@heroicons/react/solid";
+import { FiHome, FiUser, FiCode, FiMail } from "react-icons/fi";
+
+const menuItems = [
+  {
+    id: "home",
+    icon: <FiHome className="h-5 w-5" />,
+    label: "Home",
+    path: "/",
+  },
+  {
+    id: "about",
+    icon: <FiUser className="h-5 w-5" />,
+    label: "About",
+    path: "/about",
+  },
+  {
+    id: "projects",
+    icon: <FiCode className="h-5 w-5" />,
+    label: "Project",
+    path: "/project",
+  },
+  {
+    id: "contact",
+    icon: <FiMail className="h-5 w-5" />,
+    label: "Email",
+    path: "/contact",
+  },
+];
 
 const Sidebar = () => {
-  const menuItems = [
-    { id: "home", icon: <HomeIcon className="h-5 w-5" />, label: "Home", path: "/" },
-    { id: "about", icon: <UserIcon className="h-5 w-5" />, label: "About", path: "/about" },
-    { id: "projects", icon: <CodeIcon className="h-5 w-5" />, label: "Projects", path: "/project" },
-    { id: "contact", icon: <BookOpenIcon className="h-5 w-5" />, label: "Contact", path: "/contact" },
-  ];
-
   return (
-    <div className="fixed bottom-20 left-10 w-20 bg-gray-900 text-gray-400 shadow-lg rounded-3xl flex flex-col items-center py-9">
-      {menuItems.map((item) => (
-        <NavLink
-          key={item.id}
-          to={item.path}
-          className={({ isActive }) =>
-            `mb-4 flex flex-col items-center justify-center p-2 rounded-lg ${
-              isActive ? "bg-blue-500 text-white" : "hover:text-white hover:bg-gray-700"
-            }`
-          }
-        >
-          {item.icon}
-          <span className="text-xs mt-1">{item.label}</span>
-        </NavLink>
-      ))}
-    </div>
+    <>
+      {/* Mobile Layout (Bottom, Pill-Shaped, Glass Morph) */}
+      <div
+        className="
+          md:hidden 
+          fixed bottom-4 left-1/2 transform -translate-x-1/2 
+          w-[90%] max-w-md p-2 flex items-center justify-evenly 
+          rounded-full shadow-lg 
+          bg-[#776B5D]/50 bg-clip-padding backdrop-filter backdrop-blur-md border border-white/30
+          z-50
+        ">
+        {menuItems.map((item) => (
+          <NavLink
+            key={item.id}
+            to={item.path}
+            className={({ isActive }) =>
+              `flex flex-col items-center justify-center gap-1 w-12 h-12 rounded-full transition-colors duration-200 
+               ${
+                 isActive
+                   ? "text-white"
+                   : "hover:bg-[#DFDDC7]/40  hover:text-white"
+               }`
+            }>
+            {item.icon}
+            <span className="text-xs">{item.label}</span>
+          </NavLink>
+        ))}
+      </div>
+
+      {/* Desktop Layout (Vertical Sidebar, Glass Morph) */}
+      <div
+        className="
+          hidden md:flex 
+          fixed top-1/2 left-4 transform -translate-y-1/2 
+          w-20 flex-col items-center py-4 
+          rounded-full shadow-lg 
+          bg-[#776B5D]/60 bg-clip-padding backdrop-filter backdrop-blur-md border border-white/10
+          z-50
+        ">
+        {menuItems.map((item) => (
+          <NavLink
+            key={item.id}
+            to={item.path}
+            className={({ isActive }) =>
+              `mb-3 flex flex-col items-center justify-center gap-1 w-12 h-12 rounded-full transition-colors duration-200
+               ${
+                 isActive
+                   ? "text-white"
+                   : "hover:bg-[#DFDDC7]/40 hover:text-white"
+               }`
+            }>
+            {item.icon}
+            <span className="text-xs">{item.label}</span>
+          </NavLink>
+        ))}
+      </div>
+    </>
   );
 };
 
