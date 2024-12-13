@@ -10,6 +10,7 @@ import Home from "./components/pages/home";
 import About from "./components/pages/about";
 import Project from "./components/pages/projects";
 import Contact from "./components/pages/contact";
+import Attribution from "./components/pages/attribution";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
               <Route path="/about" element={<About />} />
               <Route path="/project" element={<Project />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/attribution" element={<Attribution />} />
             </Routes>
           </div>
 

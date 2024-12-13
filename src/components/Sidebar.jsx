@@ -68,7 +68,7 @@ const Sidebar = () => {
           fixed top-1/2 left-4 transform -translate-y-1/2 
           w-20 flex-col items-center py-4 
           rounded-full shadow-lg 
-          bg-[#776B5D]/60 bg-clip-padding backdrop-filter backdrop-blur-md border border-white/10
+          bg-[#776B5D]/60 bg-clip-padding backdrop-filter backdrop-blur-md
           z-50
         ">
         {menuItems.map((item) => (

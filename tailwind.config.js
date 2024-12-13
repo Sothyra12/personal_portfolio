@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         Knewave: ['Knewave', 'cursive'],
         Euphoria: ['Euphoria Script', 'cursive'],
+        Fuzzy: ['Fuzzy Bubbles', 'cursive'],
       },
       color: {
         'brownish': '#603F26',
