@@ -48,12 +48,12 @@ const Attribution = () => {
         <h1 className="text-4xl sm:text-5xl font-extralight pb-4 text-[#6F4E37] text-center mb-6">
           Attribution
         </h1>
-        <p className="text-[#66785F] pb-8 sm:pb-4 font-Fuzzy text-center text-lg sm:text-base leading-normal">
+        <p className="text-[#798777] pb-8 sm:pb-4 font-Fuzzy text-center text-lg sm:text-base leading-normal">
           &quot; A heartfelt and sincere appreciation to the amazing creators and
           communities who provided the free resources for this project. For
           their generosity and dedication to the open-source community, I
           decided to devote this entire page to express my warm acknowledgment
-          and cordial thanks. &quot; <br></br>-<span className="text-[#94A684]"> Sothyra Chan</span>
+          and cordial thanks. &quot; <br></br>-<span className="text-[#999B84]"> Sothyra Chan</span>
         </p>
         <div className="space-y-6">
           {credits.map((credit, index) => (
