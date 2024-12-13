@@ -31,10 +31,10 @@ const About = () => {
               Software Engineering Technician recent graduate from Centennial
               College with a strong foundation and interest in web development
               and software testing. I am eager to apply my technical skills and
-              continue learning through a full-time position or internship in
+              ongoing learning through a full-time position or internship in
               the tech industry. I excel in teamwork, communication, and
               problem-solving, and am always enthusiastic to explore new
-              technologies. I am ready to contribute my skills and grow further
+              technologies. I am ready to contribute my skillsets and grow further
               by learning from professionals in the field.
             </p>
 
@@ -110,6 +110,10 @@ const About = () => {
                   <span className="text-sm text-gray-600">Beginner</span>
                 </div>
                 <div className="flex items-center">
+                  <span className="text-lg font-normal mr-2">R3F</span>
+                  <span className="text-sm text-gray-600">Beginner</span>
+                </div>
+                <div className="flex items-center">
                   <span className="text-lg font-normal mr-2">TypeScript</span>
                   <span className="text-sm text-gray-600">Beginner</span>
                 </div>
@@ -182,6 +186,12 @@ const About = () => {
                 <div className="flex items-center">
                   <span className="text-lg font-normal mr-2">
                     Jira & Trello
+                  </span>
+                  <span className="text-sm text-gray-600">Beginner</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="text-lg font-normal mr-2">
+                     Blender
                   </span>
                   <span className="text-sm text-gray-600">Beginner</span>
                 </div>
