@@ -16,8 +16,3 @@ body {
   font-family: "Raleway", sans-serif;
   overflow-x: hidden; /* Prevents horizontal scrolling */
 }
-
-.footer h1 {
-  font-family: "Euphoria Script", cursive;
-  color: #e1d7c6;
-}

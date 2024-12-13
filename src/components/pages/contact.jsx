@@ -53,7 +53,7 @@ const ContactForm = () => {
         </h1>
         <form
           onSubmit={handleSubmit}
-          className="bg-white p-14 rounded-lg shadow-lg space-y-6 mb-6" 
+          className="bg-white p-9 rounded-lg shadow-lg space-y-6 mb-6" 
         >
           <input
             type="text"
