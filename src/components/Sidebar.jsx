@@ -37,7 +37,7 @@ const Sidebar = () => {
       <div
         className="
           md:hidden 
-          fixed bottom-4 left-1/2 transform -translate-x-1/2 
+          fixed bottom-10 left-1/2 transform -translate-x-1/2 
           w-[90%] max-w-md p-2 flex items-center justify-evenly 
           rounded-full shadow-lg 
           bg-[#776B5D]/50 bg-clip-padding backdrop-filter backdrop-blur-md border border-white/30

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-[#705C53] text-white">
-      <div className="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl px-4 pt-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8 pb-40 sm:pb-12">
         <h1 className="text-5xl font-Euphoria font-thin text-center text-white/70 hover:text-white transition-colors duration-200">
           <Link
             to="/"
