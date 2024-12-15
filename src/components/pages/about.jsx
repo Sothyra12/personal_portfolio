@@ -5,10 +5,39 @@ import myPic from "../../assets/myPic.png";
 import splashBg from "../../assets/splash.png";
 
 const About = () => {
+  const frontendSkills = [
+    { name: "HTML", level: "Experienced" },
+    { name: "CSS", level: "Intermediate" },
+    { name: "JavaScript", level: "Beginner" },
+    { name: "React.js", level: "Beginner" },
+    { name: "R3F", level: "Beginner" },
+    { name: "TypeScript", level: "Beginner" },
+    { name: "Bootstrap", level: "Beginner" },
+    { name: "Tailwindcss", level: "Beginner" },
+  ];
+
+  const backendSkills = [
+    { name: "MongoDB", level: "Beginner" },
+    { name: "MySQL", level: "Beginner" },
+    { name: "Node.js", level: "Beginner" },
+    { name: "Python", level: "Beginner" },
+  ];
+
+  const otherSkills = [
+    { name: "Manual Testing", level: "Beginner" },
+    { name: "Test Case Writing", level: "Beginner" },
+    { name: "Git/Github", level: "Intermediate" },
+    { name: "PL/SQL", level: "Beginner" },
+    { name: "Java, C#, C", level: "Beginner" },
+    { name: "Jira & Trello", level: "Beginner" },
+    { name: "Blender", level: "Beginner" },
+    { name: "Functional & Api Testing", level: "Beginner" },
+  ];
+
   return (
     <div className="text-gray-800 p-16">
       <div className="max-w-5xl mx-auto space-y-12">
-        {/* About Me Section */}
+        {/* About Me Section - No Changes */}
         <section
           id="about-me"
           className="flex flex-col md:flex-row items-center md:space-x-12">
@@ -22,29 +51,28 @@ const About = () => {
           </div>
 
           {/* About Me Text */}
-          <div className="ml-4 md:ml-10">
+          <div className="ml-0 md:ml-10">
             <h2 className="text-4xl font-extralight pb-4 text-[#6F4E37] text-center md:text-center mb-6">
               About Me
             </h2>
-            <p className="text-lg leading-relaxed text-center sm:text-left">
-              Hi! I am Sothyra, a
-              Software Engineering Technician recent graduate from Centennial
-              College with a strong foundation and interest in web development
-              and software testing. I am eager to apply my technical skills and
-              ongoing learning through a full-time position or internship in
-              the tech industry. I excel in teamwork, communication, and
-              problem-solving, and am always enthusiastic to explore new
-              technologies. I am ready to contribute my skillsets and grow further
-              by learning from professionals in the field.
+            <p className="indent-0 sm:indent-8 text-sm sm:text-lg md:text-lg leading-normal text-center md:text-left sm:px-6 max-w-[100%] sm:max-w-[80%] lg:max-w-full mx-auto">
+              Hey there! I am Sothyra, a Software Engineering Technician recent
+              graduate from Centennial College with a strong foundation and
+              interest in web development and software testing. I am eager to
+              apply my technical skills and ongoing learning through a full-time
+              position or internship in the tech industry. I excel in teamwork,
+              communication, and problem-solving, and am always enthusiastic to
+              explore new technologies. I am ready to contribute my skillsets
+              and grow further by learning from professionals in the field.
             </p>
 
             {/* Degree and GPA Info */}
-            <div className="flex justify-center sm:justify-center space-x-35">
+            <div className="flex flex-col sm:flex-row justify-center sm:space-x-0 space-y-0 sm:space-y-0">
               <div
-                className="text-center p-10 relative"
-                style={{ width: "250px", height: "220px" }}>
+                className="text-center p-11 sm:p-10 relative w-[80%] sm:w-[250px] mx-auto sm:mx-0"
+                style={{ height: "220px" }}>
                 <div
-                  className="absolute inset-0 bg-cover bg-no-repeat"
+                  className="absolute inset-0 bg-cover bg-no-repeat top-13 sm:top-0"
                   style={{
                     backgroundImage: `url(${splashBg})`,
                     backgroundSize: "contain",
@@ -52,18 +80,20 @@ const About = () => {
                     backgroundRepeat: "no-repeat",
                     opacity: 0.2,
                   }}></div>
-                <i className="fas fa-graduation-cap"></i>
-                <p className="font-semibold text-lg z-10 mb-2">Degree</p>
-                <p className="z-10">
-                  Diploma in Software Engineering Technician
+                <i className="fas fa-graduation-cap text-2xl sm:text-3xl"></i>
+                <p className="font-semibold text-sm sm:text-lg z-10 mb-2">
+                  Degree
+                </p>
+                <p className="z-10 text-xs sm:text-base">
+                  Software Engineering Technician
                 </p>
               </div>
 
               <div
-                className="text-center p-10 relative"
-                style={{ width: "250px", height: "220px" }}>
+                className="text-center p-5 sm:p-10 relative w-[80%] sm:w-[250px] mx-auto sm:mx-0"
+                style={{ height: "220px" }}>
                 <div
-                  className="absolute inset-0 bg-cover bg-no-repeat"
+                  className="absolute inset-0 bg-cover bg-no-repeat bottom-20 sm:bottom-0"
                   style={{
                     backgroundImage: `url(${splashBg})`,
                     backgroundSize: "contain",
@@ -71,9 +101,11 @@ const About = () => {
                     backgroundRepeat: "no-repeat",
                     opacity: 0.2,
                   }}></div>
-                <i className="fa fa-trophy"></i>
-                <p className="font-semibold text-lg z-10 mb-2">Total GPA</p>
-                <p className="z-10">3.88/4.5</p>
+                <i className="fa fa-trophy text-2xl sm:text-3xl"></i>
+                <p className="font-semibold text-sm sm:text-lg z-10 mb-2">
+                  Total GPA
+                </p>
+                <p className="z-10 text-xs sm:text-base">3.88/4.5</p>
               </div>
             </div>
           </div>
@@ -86,6 +118,7 @@ const About = () => {
           <h2 className="text-4xl font-extralight pb-4 text-[#6F4E37] mb-6 text-center">
             Technical Skills
           </h2>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Frontend Development */}
             <div className="space-y-4">
@@ -93,38 +126,14 @@ const About = () => {
                 Frontend Development
               </h3>
               <div className="flex flex-col items-center space-y-2">
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">HTML</span>
-                  <span className="text-sm text-gray-600">Experienced</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">CSS</span>
-                  <span className="text-sm text-gray-600">Intermediate</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">JavaScript</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">React.js</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">R3F</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">TypeScript</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">Bootstrap</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">Tailwindcss</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
+                {frontendSkills.map((skill, index) => (
+                  <div key={index} className="flex items-center">
+                    <span className="text-lg font-normal mr-2">
+                      {skill.name}
+                    </span>
+                    <span className="text-sm text-gray-600">{skill.level}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -134,22 +143,14 @@ const About = () => {
                 Backend Development
               </h3>
               <div className="flex flex-col items-center space-y-2">
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">MongoDB</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">MySQL</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">Node.js</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">Python</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
+                {backendSkills.map((skill, index) => (
+                  <div key={index} className="flex items-center">
+                    <span className="text-lg font-normal mr-2">
+                      {skill.name}
+                    </span>
+                    <span className="text-sm text-gray-600">{skill.level}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -159,48 +160,14 @@ const About = () => {
                 Other Technologies
               </h3>
               <div className="flex flex-col items-center space-y-2">
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">
-                    Manual Testing
-                  </span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">
-                    Test Case Writing
-                  </span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">Git/Github</span>
-                  <span className="text-sm text-gray-600">Intermediate</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">PL/SQL</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">Java, C#, C</span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">
-                    Jira & Trello
-                  </span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">
-                     Blender
-                  </span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-lg font-normal mr-2">
-                     Functional & Api Testing
-                  </span>
-                  <span className="text-sm text-gray-600">Beginner</span>
-                </div>
+                {otherSkills.map((skill, index) => (
+                  <div key={index} className="flex items-center">
+                    <span className="text-lg font-normal mr-2">
+                      {skill.name}
+                    </span>
+                    <span className="text-sm text-gray-600">{skill.level}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
