@@ -6,9 +6,9 @@ import splashBg from "../../assets/splash.png";
 
 const About = () => {
   const frontendSkills = [
-    { name: "HTML", level: "Experienced" },
-    { name: "CSS", level: "Intermediate" },
-    { name: "JavaScript", level: "Beginner" },
+    { name: "HTML", level: "Advanced" },
+    { name: "CSS", level: "Advanced" },
+    { name: "JavaScript", level: "Intermediate" },
     { name: "React.js", level: "Beginner" },
     { name: "R3F", level: "Beginner" },
     { name: "TypeScript", level: "Beginner" },
@@ -36,11 +36,12 @@ const About = () => {
 
   return (
     <div className="text-gray-800 p-16">
-      <div className="max-w-5xl mx-auto space-y-12">
-        {/* About Me Section - No Changes */}
+      <div className="max-w-5xl mx-auto space-y-0 sm:space-y-12">
+        {/* About Me Section (No Changes) */}
         <section
           id="about-me"
-          className="flex flex-col md:flex-row items-center md:space-x-12">
+          className="flex flex-col md:flex-row items-center md:space-x-12"
+        >
           {/* Profile Image */}
           <div className="w-48 h-48 md:w-[1400px] md:h-[320px] mb-6 md:mb-0 overflow-hidden rounded-full md:rounded-lg">
             <img
@@ -70,7 +71,8 @@ const About = () => {
             <div className="flex flex-col sm:flex-row justify-center sm:space-x-0 space-y-0 sm:space-y-0">
               <div
                 className="text-center p-11 sm:p-10 relative w-[80%] sm:w-[250px] mx-auto sm:mx-0"
-                style={{ height: "220px" }}>
+                style={{ height: "220px" }}
+              >
                 <div
                   className="absolute inset-0 bg-cover bg-no-repeat top-13 sm:top-0"
                   style={{
@@ -79,7 +81,8 @@ const About = () => {
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                     opacity: 0.2,
-                  }}></div>
+                  }}
+                ></div>
                 <i className="fas fa-graduation-cap text-2xl sm:text-3xl"></i>
                 <p className="font-semibold text-sm sm:text-lg z-10 mb-2">
                   Degree
@@ -91,7 +94,8 @@ const About = () => {
 
               <div
                 className="text-center p-5 sm:p-10 relative w-[80%] sm:w-[250px] mx-auto sm:mx-0"
-                style={{ height: "220px" }}>
+                style={{ height: "220px" }}
+              >
                 <div
                   className="absolute inset-0 bg-cover bg-no-repeat bottom-20 sm:bottom-0"
                   style={{
@@ -100,7 +104,8 @@ const About = () => {
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                     opacity: 0.2,
-                  }}></div>
+                  }}
+                ></div>
                 <i className="fa fa-trophy text-2xl sm:text-3xl"></i>
                 <p className="font-semibold text-sm sm:text-lg z-10 mb-2">
                   Total GPA
@@ -111,27 +116,30 @@ const About = () => {
           </div>
         </section>
 
-        {/* Skills Section */}
+        {/* Skills Section (Updated Font Responsiveness) */}
         <section
           id="skills"
-          className="h-full w-full bg-[#d7ccc8] rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 p-8">
-          <h2 className="text-4xl font-extralight pb-4 text-[#6F4E37] mb-6 text-center">
+          className="h-full w-full bg-[#E2DED3] rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 p-0 py-8 sm:p-8"
+        >
+          <h2 className="text-4xl font-extralight pb-6 sm:pb-8 text-[#6F4E37] text-center">
             Technical Skills
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Frontend Development */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-center">
-                Frontend Development
-              </h3>
+              <h3 className="text-base sm:text-xl font-medium text-center text-[#603F26]">Frontend Development</h3>
               <div className="flex flex-col items-center space-y-2">
                 {frontendSkills.map((skill, index) => (
                   <div key={index} className="flex items-center">
-                    <span className="text-lg font-normal mr-2">
+                    {/* Skill name: small on phones, larger on bigger screens */}
+                    <span className="text-sm sm:text-lg font-normal mr-2 text-[#8B7E74]">
                       {skill.name}
                     </span>
-                    <span className="text-sm text-gray-600">{skill.level}</span>
+                    {/* Skill level: even smaller on phones, scales up on larger screens */}
+                    <span className="text-xs sm:text-base text-gray-600 text-[#A4907C]/70">
+                      {skill.level}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -139,16 +147,16 @@ const About = () => {
 
             {/* Backend Development */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-center">
-                Backend Development
-              </h3>
+              <h3 className="text-base sm:text-xl font-medium text-center text-[#603F26]">Backend Development</h3>
               <div className="flex flex-col items-center space-y-2">
                 {backendSkills.map((skill, index) => (
                   <div key={index} className="flex items-center">
-                    <span className="text-lg font-normal mr-2">
+                    <span className="text-sm sm:text-lg font-normal mr-2 text-[#8B7E74]">
                       {skill.name}
                     </span>
-                    <span className="text-sm text-gray-600">{skill.level}</span>
+                    <span className="text-xs sm:text-base text-gray-600 text-[#A4907C]/70">
+                      {skill.level}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -156,16 +164,16 @@ const About = () => {
 
             {/* Other Technologies */}
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-center">
-                Other Technologies
-              </h3>
+              <h3 className="text-base sm:text-xl font-medium text-center text-[#603F26]">Other Technologies</h3>
               <div className="flex flex-col items-center space-y-2">
                 {otherSkills.map((skill, index) => (
                   <div key={index} className="flex items-center">
-                    <span className="text-lg font-normal mr-2">
+                    <span className="text-sm sm:text-lg font-normal mr-2 text-[#8B7E74]">
                       {skill.name}
                     </span>
-                    <span className="text-sm text-gray-600">{skill.level}</span>
+                    <span className="text-xs sm:text-base text-gray-600 text-[#A4907C]/70">
+                      {skill.level}
+                    </span>
                   </div>
                 ))}
               </div>
