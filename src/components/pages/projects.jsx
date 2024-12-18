@@ -116,7 +116,7 @@ const ExperienceCard = ({ experience, position }) => {
           {experience.company}
         </h4>
         <p className="text-sm text-[#6F4E37] mb-2">{experience.date}</p>
-        <p className="text-sm text-[#603F26] leading-relaxed">
+        <p className="text-sm text-[#776B5D]/90 leading-relaxed">
           {experience.description}
         </p>
       </div>
@@ -150,7 +150,7 @@ const Project = () => (
           <div className="border-l-4 border-[#6F4E37] h-full absolute top-0 left-1/2 transform -translate-x-1/2"></div>
 
           <div className="flex flex-col space-y-12">
-            {experienceData.map((experience, index) => {
+            {experienceData.map((experience, index) => { 
               const position = index % 2 === 0 ? "left" : "right";
               return (
                 <div key={index} className="relative flex flex-col sm:block">
