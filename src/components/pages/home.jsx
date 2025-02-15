@@ -44,7 +44,7 @@ const Home = () => {
               <br></br>A thriving individual with a strong foundation
               in web technologies and a passion for building intuitive,
               accessible, and user-friendly experiences. Proficient in
-              JavaScript, React, and front-end development, with experience
+              JavaScript, React, and front & back-end development, with experience
               collaborating in diverse teams to create innovative solutions.
               Committed to continuous learning and refining digital interactions
               to effectively meet user needs.

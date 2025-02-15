@@ -73,7 +73,7 @@ const ProjectCard = ({ project }) => {
   const hasDemo = Boolean(project.demoLink);
 
   return (
-    <div className="w-full sm:w-1/2 md:w-1/4 p-4">
+    <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/4 p-5">
       <div
         className="
         rounded-lg overflow-hidden shadow-md 
