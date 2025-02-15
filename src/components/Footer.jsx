@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#705C53] text-white">
-      <div className="max-w-screen-xl px-4 pt-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8 pb-40 sm:pb-12">
-        {/* Website Title */}
+    <footer className="bg-[#705C53] text-white w-full md:max-w-7xl mx-auto">
+     <div className="bg-[#705C53] text-white px-4 pt-20 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8 pb-40"> 
+       {/* Website Title */}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-Euphoria font-thin text-center text-white/70 hover:text-white transition-colors duration-200">
           <Link
             to="/"

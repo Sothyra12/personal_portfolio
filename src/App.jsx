@@ -16,7 +16,17 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <Router>
-      <div className="max-w-7xl mx-auto bg-[#FBF8EF] shadow-sm">
+      {/*
+        The following div uses responsive min-height values:
+        - On small devices: full viewport height (min-h-screen).
+        - On medium devices (e.g., iPad Mini portrait / Surface Pro 7): adjust height calculation.
+        - On large devices: use your original calculation.
+      */}
+      <div className="w-full md:max-w-7xl mx-auto bg-[#FBF8EF] shadow-sm
+                      min-h-screen 
+                      sm:min-h-[calc(100vh-500px)] 
+                      md:min-h-[calc(100vh-500px)] 
+                      lg:min-h-[calc(100vh-500px)]">
         {/* Sidebar */}
         <Sidebar />
 
@@ -35,11 +45,9 @@ const App = () => {
               <Route path="/attribution" element={<Attribution />} />
             </Routes>
           </div>
-
-          {/* Footer */}
-          <Footer />
         </div>
       </div>
+      <Footer />
     </Router>
   );
 };

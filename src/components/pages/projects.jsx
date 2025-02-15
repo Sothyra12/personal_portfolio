@@ -1,36 +1,45 @@
 // src/components/pages/projects.jsx
 
 import PropTypes from "prop-types";
-import projectPic from "../../assets/projCover.png";
+import smartHomePic from "../../assets/smartHome.png";
+import smartBotPic from "../../assets/smartbotPic.png";
+import jobTrackerPic from "../../assets/jobtrackerPic.png";
+import eLibraryPic from "../../assets/hhaPic.png";
+import myPortfolioPic from "../../assets/portfolioPic.png";
 
 const projects = [
   {
-    name: "Electronic Library",
-    description: "Spring Boot | ReactJs | MySQL",
-    githubLink: "#",
+    name: "My Portfolio",
+    description: "React | R3F | TailwindCSS",
+    githubLink: "https://github.com/Sothyra12/personal_portfolio",
     websiteLink: "#",
-    imageUrl: `${projectPic}`,
+    imageUrl: `${myPortfolioPic}`,
   },
   {
-    name: "Job Tracker",
-    description: "HTML | CSS | JS | PHP | MySQL",
-    githubLink: "#",
-    websiteLink: "#",
-    imageUrl: `${projectPic}`,
+    name: "ChatBot", 
+    description: "Python | Langchain | Streamlit ",
+    githubLink: "https://github.com/Sothyra12/MemoryChatBot",
+    websiteLink: "https://drive.google.com/file/d/1rYu5iR37EIzeWulL9g-xLdusfl6BTNoT/view?usp=drive_link",
+    imageUrl: `${smartBotPic}`,
   },
   {
     name: "Smart Home System",
-    description: "ReactJs | React Native",
-    githubLink: "#",
-    websiteLink: "#",
-    imageUrl: `${projectPic}`,
+    description: "React-Native | Python | MySQL",
+    githubLink: "https://github.com/Sothyra12/Smart_Home",
+    demoLink: "https://drive.google.com/file/d/1vUEbxhyKwoU4o_S5yVi-Qg84msOeLWJY/view?usp=drive_link",
+    imageUrl: `${smartHomePic}`,
   },
   {
-    name: "My Portfolio (current)",
-    description: "HTML | CSS | JS | Bootstrap",
-    githubLink: "#",
-    websiteLink: "#",
-    imageUrl: `${projectPic}`,
+    name: "Job Tracker - ongoing",
+    description: "React | Tailwind | Python | MySQL",
+    demoLink: "https://drive.google.com/file/d/1zPoGmueYOVIlTMQ9vNM9xK8yoqrfTUO5/view?usp=drive_link",
+    imageUrl: `${jobTrackerPic}`,
+  },
+  {
+    name: "ELibrary - ongoing", 
+    description: "React | Bootstrap | Node | MySQL",
+    demoLink: "https://drive.google.com/file/d/1rYu5iR37EIzeWulL9g-xLdusfl6BTNoT/view?usp=drive_link",
+    imageUrl: `${eLibraryPic}`,
   },
 ];
 
@@ -58,42 +67,65 @@ const experienceData = [
   },
 ];
 
-const ProjectCard = ({ project }) => (
-  <div className="w-full sm:w-1/2 md:w-1/4 p-4">
-    <div
-      className="
-      rounded-lg overflow-hidden shadow-md 
-      bg-[#D0BAA8]/20 backdrop-blur-sm border border-[#F3EEEA]/50 
-      transition transform hover:shadow-xl hover:scale-105
-    ">
-      <img
-        className="w-full h-48 object-cover"
-        src={project.imageUrl}
-        alt={project.name}
-      />
-      <div className="p-4 text-[#603F26]">
-        <h3 className="text-lg font-semibold mb-2">{project.name}</h3>
-        <p className="text-sm mb-4">{project.description}</p>
-        <div className="flex justify-between items-center text-sm">
-          <a
-            href={project.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#6F4E37] hover:text-white hover:bg-[#5C3D2E]/50 px-2 py-1 rounded transition duration-200">
-            Github
-          </a>
-          <a
-            href={project.websiteLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#6F4E37] hover:text-white hover:bg-[#5C3D2E]/50 px-2 py-1 rounded transition duration-200">
-            Visit Website
-          </a>
+const ProjectCard = ({ project }) => {
+  const hasGithub = Boolean(project.githubLink);
+  const hasWebsite = Boolean(project.websiteLink);
+  const hasDemo = Boolean(project.demoLink);
+
+  return (
+    <div className="w-full sm:w-1/2 md:w-1/4 p-4">
+      <div
+        className="
+        rounded-lg overflow-hidden shadow-md 
+        bg-[#D0BAA8]/20 backdrop-blur-sm border border-[#F3EEEA]/50 
+        transition transform hover:shadow-xl hover:scale-105
+      ">
+        <img
+          className="w-full h-48 object-cover"
+          src={project.imageUrl}
+          alt={project.name}
+        />
+        <div className="p-4 text-[#603F26]">
+          <h3 className="text-lg font-semibold mb-2">{project.name}</h3>
+          <p className="text-sm mb-4">{project.description}</p>
+          <div
+            className={`flex items-center ${
+              hasGithub + hasWebsite + hasDemo > 1? "justify-between" : "justify-end"
+            }`}
+          >
+            {hasGithub && (
+              <a
+                href={project.githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#6F4E37] hover:text-white hover:bg-[#5C3D2E]/50 px-2 py-1 rounded transition duration-200">
+                Github
+              </a>
+            )}
+            {hasWebsite && (
+              <a
+                href={project.websiteLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#6F4E37] hover:text-white hover:bg-[#5C3D2E]/50 px-2 py-1 rounded transition duration-200">
+                Website
+              </a>
+            )}
+            {hasDemo && (
+              <a
+                href={project.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#6F4E37] hover:text-white hover:bg-[#5C3D2E]/50 px-2 py-1 rounded transition duration-200">
+                Demo
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const ExperienceCard = ({ experience, position }) => {
   const alignmentClasses =
@@ -132,7 +164,7 @@ const Project = () => (
         <h1 className="text-4xl font-extralight pb-4 text-[#6F4E37] text-center mb-6">
           My Projects
         </h1>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-left">
           {projects.map((project) => (
             <ProjectCard key={project.name} project={project} />
           ))}
@@ -173,6 +205,7 @@ ProjectCard.propTypes = {
     description: PropTypes.string.isRequired,
     githubLink: PropTypes.string,
     websiteLink: PropTypes.string,
+    demoLink: PropTypes.string,
     imageUrl: PropTypes.string.isRequired,
   }).isRequired,
 };
