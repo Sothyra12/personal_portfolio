@@ -65,6 +65,29 @@ const About = () => {
               communication, and problem-solving, and am always enthusiastic to
               explore new technologies. I am ready to contribute my skillsets
               and grow further by learning from professionals in the field.
+              <a
+                href="https://drive.google.com/drive/folders/1fJUDtpVVLyepJ5HcRZMUmCOhWmGx6AHm?usp=drive_link"
+                className="
+                  inline-flex items-center justify-center
+                   py-2
+                  text-sm sm:text-base
+                  text-[#A0937D] hover:text-[#8B7355]
+                  bg-[#A0937D]/30 hover:bg-[#A0937D]/50
+                  rounded-full
+                  transition-all duration-300 ease-in-out
+                  group
+                ">
+                <span className="font-medium">View Achievements</span>
+                <span
+                  role="img"
+                  aria-label="star"
+                  className="
+                    transform group-hover:rotate-12 group-hover:scale-110
+                    duration-300
+                  ">
+                  ⭐
+                </span>
+              </a>
             </p>
 
             {/* Degree and GPA Info */}
@@ -128,7 +151,9 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Frontend Development */}
             <div className="space-y-4">
-              <h3 className="text-base sm:text-xl font-medium text-center text-[#603F26]">Frontend Development</h3>
+              <h3 className="text-base sm:text-xl font-medium text-center text-[#603F26]">
+                Frontend Development
+              </h3>
               <div className="flex flex-col items-center space-y-2">
                 {frontendSkills.map((skill, index) => (
                   <div key={index} className="flex items-center">
@@ -147,7 +172,9 @@ const About = () => {
 
             {/* Backend Development */}
             <div className="space-y-4">
-              <h3 className="text-base sm:text-xl font-medium text-center text-[#603F26]">Backend Development</h3>
+              <h3 className="text-base sm:text-xl font-medium text-center text-[#603F26]">
+                Backend Development
+              </h3>
               <div className="flex flex-col items-center space-y-2">
                 {backendSkills.map((skill, index) => (
                   <div key={index} className="flex items-center">
@@ -164,7 +191,9 @@ const About = () => {
 
             {/* Other Technologies */}
             <div className="space-y-4">
-              <h3 className="text-base sm:text-xl font-medium text-center text-[#603F26]">Other Technologies</h3>
+              <h3 className="text-base sm:text-xl font-medium text-center text-[#603F26]">
+                Other Technologies
+              </h3>
               <div className="flex flex-col items-center space-y-2">
                 {otherSkills.map((skill, index) => (
                   <div key={index} className="flex items-center">

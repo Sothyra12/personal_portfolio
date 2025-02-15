@@ -12,14 +12,14 @@ const projects = [
     name: "My Portfolio",
     description: "React | R3F | TailwindCSS",
     githubLink: "https://github.com/Sothyra12/personal_portfolio",
-    websiteLink: "#",
+    websiteLink: "https://sothyrachan.com/",
     imageUrl: `${myPortfolioPic}`,
   },
   {
     name: "ChatBot", 
     description: "Python | Langchain | Streamlit ",
     githubLink: "https://github.com/Sothyra12/MemoryChatBot",
-    websiteLink: "https://drive.google.com/file/d/1rYu5iR37EIzeWulL9g-xLdusfl6BTNoT/view?usp=drive_link",
+    websiteLink: "https://smartmemorybot.streamlit.app/",
     imageUrl: `${smartBotPic}`,
   },
   {
