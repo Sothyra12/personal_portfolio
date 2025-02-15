@@ -32,7 +32,7 @@ const projects = [
   {
     name: "Job Tracker - ongoing",
     description: "React | Tailwind | Python | MySQL",
-    demoLink: "https://drive.google.com/file/d/1zPoGmueYOVIlTMQ9vNM9xK8yoqrfTUO5/view?usp=drive_link",
+    demoLink: "https://drive.google.com/file/d/1hS8Ni7hVe4maCo3BgRIr6I9qqcNEUT_m/view?usp=drive_link",
     imageUrl: `${jobTrackerPic}`,
   },
   {
