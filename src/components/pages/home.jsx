@@ -4,7 +4,7 @@ import { Suspense, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Html } from '@react-three/drei';
 import { useGLTF, useAnimations } from "@react-three/drei";
-import myResume from "../../assets/sothyra_resume.pdf";
+import myResume from "../../assets/SothyraChan_Resume.pdf";
 
 function AnimatedAvatar() {
   // Load the GLB model and animations
